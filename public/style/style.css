@@ -1,0 +1,40 @@
+html {
+  font-size: 1vw;
+}
+body {
+background-color: #FBFBFB;
+font-family: 'Muli', sans-serif;
+display: flex;
+min-height: 100vh;
+flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+#hero{
+  background-color: #7FD3F2
+}
+/*Color Rules*/
+.purpBtn{
+  background-color: #B08DF1 !important;
+  color: white;
+  width: 350px;
+  font-weight:600;
+  height: 45px;
+  line-height: 45px;
+  font-size:30px;
+}
+
+.whiteTxt{
+  color:white;
+}
+
+h1{
+  font-size: 5.5em;
+}
+/*Alignment*/
+.tac{
+text-align:center;
+}

@@ -1,0 +1,19 @@
+body {
+background-color: #7FD3F2;
+}
+
+/*Color Rules*/
+.purpBtn{
+  background-color: #B08DF1 !important;
+  color: white;
+}
+
+.whiteTxt{
+  color:white;
+}
+
+
+/*Alignment*/
+.tac{
+text-align:center;
+}
