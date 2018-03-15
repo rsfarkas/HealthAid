@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+  <head>
+    <meta charset="UTF-8">
+    <title>HealthAid</title>
+    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js'></script>
+    <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+    <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+
+  </head>
+
+  <body>
+
+    <div class="container">
+
+      <h1><span class="fa fa-sign-in"></span> Setup</h1>
+
+        <!-- SETUP FORM -->
+
+      <form action="/setup" method="post">
+        <% Object.keys(user.phi).forEach(function(key) { %>
+            <% if (key != '$init') {%>
+        <fieldset class="form-group">
+          <div class="checkbox">
+            <label>
+        <% if (user.phi[key].visible) { %>
+                <input type="checkbox" checked="true" data-toggle="toggle" name=<%= key%> id=<%= key %> >
+          <%} else {%>
+                <input type="checkbox" data-toggle="toggle" name=<%= key%> id=<%= key %> >
+          <%} %>
+                <%= key %>
+              </label>
+        </div>
+          <%} %>
+        <% });
+      %>
+          </fieldset>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+    </div>
+
+  </body>
+
+</html>
+
