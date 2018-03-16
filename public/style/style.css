@@ -14,7 +14,15 @@ main {
 }
 
 #hero{
-  background-color: #7FD3F2
+  background-color: #64D5F6;
+}
+
+.nav-wrapper{
+  background-color: #64D5F6;
+}
+
+.page-footer{
+  background-color: #64D5F6;
 }
 /*Color Rules*/
 .purpBtn{
@@ -27,14 +35,30 @@ main {
   font-size:30px;
 }
 
+.nextBtn{
+  background-color: #67E2B3;
+}
+
 .whiteTxt{
   color:white;
 }
 
+/*Font sizes*/
 h1{
   font-size: 5.5em;
+}
+p{
+  font-size: 1.875em;
+}
+.psmall{
+  font-size: 1.3em;
 }
 /*Alignment*/
 .tac{
 text-align:center;
+}
+
+/*padding*/
+.pt50{
+  padding-top: 50px;
 }
