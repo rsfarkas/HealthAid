@@ -7,8 +7,15 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script type="text/javascript" src="js/eip.min.js"></script>
     <script type="text/javascript" src="js/editable.js"></script>
+      <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+      <link rel="stylesheet" href="../style/style.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+      <link href="https://fonts.googleapis.com/css?family=Muli:300,400,600,700,800" rel="stylesheet">
+      <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
     <style>
-        body         { padding-top:80px; word-wrap:break-word; }
+
         #popup-container {
             width: 1px;
             height: 1px;
@@ -27,35 +34,35 @@
 </head>
 <body>
 <div class="container">
-   <div id="popup-container">
+   <!-- <div id="popup-container">
         <div class="popup"></div>
     </div>
     <div class="alert alert-success hidden">
         <p>
             <span></span>
         </p>
-    </div>
+    </div> -->
 
     <div class="page-header text-center">
       <h1><span class="fa"></span> We're glad to have you </h1>
         <a href="/logout" class="btn btn-default btn-sm">Logout</a>
         <a href="/setup" class="btn btn-default btn-sm">Edit</a>
-    </div>
-                  <% if (user.local.email) { %>
-                      <p>
-                          <strong>hi </strong><%= user.local.email %><br>
-                      </p>
+        <% if (user.local.email) { %>
+            <p>
+                <strong>hi </strong><%= user.local.email %><br>
+            </p>
 
-                  <% } %>
+        <% } %>
+    </div>
+
 
 
     <div class="row">
-
         <!-- HEIGHT INFORMATION -->
         <% if (user.phi.height.visible) { %>
-        <div class="col-sm-4">
+        <div class="col s4">
             <div class="well">
-                <h3><span class="fa fa-user"></span> Height </h3>
+                <h3></span> Height </h3>
 
                     <p>
                     <span class="editable" id="height"> <%= user.phi.height.content %></span><br>
@@ -67,9 +74,9 @@
 
         <!-- WEIGHT INFORMATION -->
         <% if (user.phi.weight.visible) { %>
-        <div class="col-sm-4">
+        <div class="col s4">
             <div class="well">
-                <h3><span class="fa fa-user"></span> Weight </h3>
+                <h3>Weight</h3>
 
                     <p>
                     <span class="editable" id="weight"> <%= user.phi.weight.content %></span><br>
@@ -81,9 +88,9 @@
 
         <!-- BP INFORMATION -->
         <% if (user.phi.bp.visible) { %>
-        <div class="col-sm-4">
+        <div class="col s4">
             <div class="well">
-                <h3><span class="fa fa-user"></span> BP </h3>
+                <h3>BP</h3>
 
                     <p>
                     <span class="editable" id="bp"> <%= user.phi.bp.content %></span><br>
@@ -95,9 +102,9 @@
 
         <!-- HR INFORMATION -->
         <% if (user.phi.hr.visible) { %>
-        <div class="col-sm-4">
+        <div class="col s4">
             <div class="well">
-                <h3><span class="fa fa-user"></span> HR </h3>
+                <h3>HR</h3>
                     <p>
                     <span class="editable" id="hr"> <%= user.phi.hr.content %></span><br>
                     </p>
@@ -108,9 +115,9 @@
 
         <!-- PAP INFORMATION -->
         <% if (user.phi.pap.visible) { %>
-        <div class="col-sm-4">
+        <div class="col s4">
             <div class="well">
-                <h3><span class="fa fa-user"></span> PAP </h3>
+                <h3>PAP</h3>
 
                     <p>
                     <span class="editable" id="pap"> <%= user.phi.pap.content %></span><br>
@@ -122,9 +129,9 @@
 
         <!-- SKIN INFORMATION -->
         <% if (user.phi.skin.visible) { %>
-        <div class="col-sm-4">
+        <div class="col s4">
             <div class="well">
-                <h3><span class="fa fa-user"></span> Skin </h3>
+                <h3>Skin</h3>
                     <p>
                     <span class="editable" id="skin"> <%= user.phi.skin.content %> </span><br>
                     </p>
@@ -132,12 +139,11 @@
 
             </div>
         </div>
-    </div>
+    </div><!--row-->
 
-</div>
+</div><!--container-->
 </body>
 </html>
 
 
 <!-- //source: https://scotch.io/tutorials/easy-node-authentication-setup-and-local -->
-

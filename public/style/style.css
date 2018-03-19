@@ -7,6 +7,7 @@ font-family: 'Muli', sans-serif;
 display: flex;
 min-height: 100vh;
 flex-direction: column;
+color: #1E3F61;
 }
 
 main {
@@ -35,17 +36,31 @@ main {
   font-size:30px;
 }
 
+.whiteTxt{
+  color:white;
+}
+
+.btn{
+  background-color:#B988F8;
+}
+.btn:hover{
+  background-color:#aa7fe2;
+}
+
 .nextBtn{
   background-color: #67E2B3;
 }
-
-.whiteTxt{
-  color:white;
+.nextBtn:hover{
+  background-color: #5ecaa1;
 }
 
 /*Font sizes*/
 h1{
   font-size: 5.5em;
+}
+
+h3{
+  font-size: 2.5em;
 }
 p{
   font-size: 1.875em;
@@ -58,7 +73,34 @@ p{
 text-align:center;
 }
 
+.fr{
+  float:right;
+}
+
 /*padding*/
 .pt50{
   padding-top: 50px;
 }
+
+/*toggles*/
+fieldset {
+    border: 0;
+    margin: 0px;
+    padding: 0em;
+  }
+
+  label {
+      font-size: 1.5rem;
+      color: #1E3F61;
+  }
+
+  .well {
+      min-height: 20px;
+      padding: 19px;
+      margin-bottom: 20px;
+      background-color: #FFFFFF;
+      border: 3px solid #67E2B3;
+      border-radius: 4px;
+     -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.05);
+     box-shadow: inset 0 1px 1px rgba(0,0,0,.05);
+    }
