@@ -50,24 +50,20 @@
 
     <div class="row">
         <!-- HEIGHT INFORMATION -->
-
+<% if (user.phi.height.visible) { %>
         <div class="col s4">
-                        <% if (user.phi.height.visible) { %>
             <div class="well">
                 <h3></span> Height </h3>
 
                     <p>
                     <span class="editable" id="height"> <%= user.phi.height.content %></span><br>
                     </p>
-
             </div>
-                         <%  } %>
         </div>
-
+     <%  } %>
         <!-- WEIGHT INFORMATION -->
-
-        <div class="col s4">
                     <% if (user.phi.weight.visible) { %>
+        <div class="col s4">
             <div class="well">
                 <h3>Weight</h3>
 
@@ -75,12 +71,11 @@
                     <span class="editable" id="weight"> <%= user.phi.weight.content %></span><br>
                     </p>
             </div>
-                           <%  } %>
         </div>
-
+                           <%  } %>
         <!-- BP INFORMATION -->
-        <div class="col s4">
           <% if (user.phi.bp.visible) { %>
+        <div class="col s4">
             <div class="well">
                 <h3>BP</h3>
 
@@ -88,49 +83,42 @@
                     <span class="editable" id="bp"> <%= user.phi.bp.content %></span><br>
                     </p>
             </div>
-               <%  } %>
         </div>
-
+               <%  } %>
         <!-- HR INFORMATION -->
-
+                        <% if (user.phi.hr.visible) { %>
         <div class="col s4">
             <div class="well">
-                        <% if (user.phi.hr.visible) { %>
                 <h3>HR</h3>
                     <p>
                     <span class="editable" id="hr"> <%= user.phi.hr.content %></span><br>
                     </p>
-               <%  } %>
-
             </div>
         </div>
-
+               <%  } %>
         <!-- PAP INFORMATION -->
+                              <% if (user.phi.pap.visible) { %>
         <div class="col s4">
             <div class="well">
-                      <% if (user.phi.pap.visible) { %>
                 <h3>PAP</h3>
 
                     <p>
                     <span class="editable" id="pap"> <%= user.phi.pap.content %></span><br>
                     </p>
-               <%  } %>
-
             </div>
         </div>
-
+               <%  } %>
         <!-- SKIN INFORMATION -->
+                              <% if (user.phi.skin.visible) { %>
         <div class="col s4">
             <div class="well">
-                      <% if (user.phi.skin.visible) { %>
                 <h3>Skin</h3>
                     <p>
                     <span class="editable" id="skin"> <%= user.phi.skin.content %> </span><br>
                     </p>
-               <%  } %>
-
             </div>
         </div>
+                       <%  } %>
     </div><!--row-->
 
 </div><!--container-->
