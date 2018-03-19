@@ -34,15 +34,6 @@
 </head>
 <body>
 <div class="container">
-   <!-- <div id="popup-container">
-        <div class="popup"></div>
-    </div>
-    <div class="alert alert-success hidden">
-        <p>
-            <span></span>
-        </p>
-    </div> -->
-
     <div class="page-header text-center">
       <h1><span class="fa"></span> We're glad to have you </h1>
         <a href="/logout" class="btn btn-default btn-sm">Logout</a>
@@ -59,51 +50,52 @@
 
     <div class="row">
         <!-- HEIGHT INFORMATION -->
-        <% if (user.phi.height.visible) { %>
+
         <div class="col s4">
+                        <% if (user.phi.height.visible) { %>
             <div class="well">
                 <h3></span> Height </h3>
 
                     <p>
                     <span class="editable" id="height"> <%= user.phi.height.content %></span><br>
                     </p>
-               <%  } %>
 
             </div>
+                         <%  } %>
         </div>
 
         <!-- WEIGHT INFORMATION -->
-        <% if (user.phi.weight.visible) { %>
+
         <div class="col s4">
+                    <% if (user.phi.weight.visible) { %>
             <div class="well">
                 <h3>Weight</h3>
 
                     <p>
                     <span class="editable" id="weight"> <%= user.phi.weight.content %></span><br>
                     </p>
-               <%  } %>
-
             </div>
+                           <%  } %>
         </div>
 
         <!-- BP INFORMATION -->
-        <% if (user.phi.bp.visible) { %>
         <div class="col s4">
+          <% if (user.phi.bp.visible) { %>
             <div class="well">
                 <h3>BP</h3>
 
                     <p>
                     <span class="editable" id="bp"> <%= user.phi.bp.content %></span><br>
                     </p>
-               <%  } %>
-
             </div>
+               <%  } %>
         </div>
 
         <!-- HR INFORMATION -->
-        <% if (user.phi.hr.visible) { %>
+
         <div class="col s4">
             <div class="well">
+                        <% if (user.phi.hr.visible) { %>
                 <h3>HR</h3>
                     <p>
                     <span class="editable" id="hr"> <%= user.phi.hr.content %></span><br>
@@ -114,9 +106,9 @@
         </div>
 
         <!-- PAP INFORMATION -->
-        <% if (user.phi.pap.visible) { %>
         <div class="col s4">
             <div class="well">
+                      <% if (user.phi.pap.visible) { %>
                 <h3>PAP</h3>
 
                     <p>
@@ -128,9 +120,9 @@
         </div>
 
         <!-- SKIN INFORMATION -->
-        <% if (user.phi.skin.visible) { %>
         <div class="col s4">
             <div class="well">
+                      <% if (user.phi.skin.visible) { %>
                 <h3>Skin</h3>
                     <p>
                     <span class="editable" id="skin"> <%= user.phi.skin.content %> </span><br>
