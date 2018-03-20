@@ -29,6 +29,22 @@ module.exports = function(app, passport) {
         });
     });
 
+    // SKIN ==============================
+    app.get('/skin', isLoggedIn, function(req, res) {
+        res.render('skin.ejs', {
+            user : req.user
+        });
+    });
+    app.get('/skin2', isLoggedIn, function(req, res) {
+        res.render('skin2.ejs', {
+            user : req.user
+        });
+    });
+    app.get('/skin3', isLoggedIn, function(req, res) {
+        res.render('skin3.ejs', {
+            user : req.user
+        });
+    });
 
 // =============================================================================
 // PHI =========================================================================
@@ -140,4 +156,3 @@ function isLoggedIn(req, res, next) {
 }
 
 //source: https://scotch.io/tutorials/easy-node-authentication-setup-and-local
-
