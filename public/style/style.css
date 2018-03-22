@@ -79,7 +79,34 @@ main {
   color: white;
   text-decoration: none;
 }
-
+.complete{
+  background-color: white;
+    border: solid 2px #67E2B3;
+    text-decoration: none;
+    color: #67E2B3;
+    text-align: center;
+    border: 1 #67E2B3;
+    letter-spacing: .5px;
+    -webkit-transition: .2s ease-out;
+    transition: .2s ease-out;
+    cursor: pointer;
+    font-size: 1rem;
+    outline: 0;
+    /* border: none; */
+    border-radius: 2px;
+    display: inline-block;
+    height: 36px;
+    line-height: 36px;
+    padding: 0 2rem;
+    text-transform: uppercase;
+    vertical-align: middle;
+    -webkit-tap-highlight-color: transparent;
+}
+.complete:hover{
+  border: solid 2px #5ecaa1;
+  color: #67E2B3;
+  text-decoration: none;
+}
 /*Font sizes*/
 h1{
   font-size: 5.5em;

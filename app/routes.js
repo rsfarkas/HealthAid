@@ -45,6 +45,25 @@ module.exports = function(app, passport) {
             user : req.user
         });
     });
+    app.get('/skin4', isLoggedIn, function(req, res) {
+        res.render('skin4.ejs', {
+            user : req.user
+        });
+    });
+    app.get('/skin5', isLoggedIn, function(req, res) {
+        res.render('skin5.ejs', {
+            user : req.user
+        });
+    });
+    app.get('/skin6', isLoggedIn, function(req, res) {
+        res.render('skin6.ejs', {
+            user : req.user
+        });
+    });    app.get('/skin7', isLoggedIn, function(req, res) {
+            res.render('skin7.ejs', {
+                user : req.user
+            });
+        });
 
 // =============================================================================
 // PHI =========================================================================
