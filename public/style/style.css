@@ -136,7 +136,9 @@ text-align:left !important;
 .pt50{
   padding-top: 50px;
 }
-
+.mw500{
+  max-width:500px;
+}
 /*toggles*/
 fieldset {
     border: 0;
