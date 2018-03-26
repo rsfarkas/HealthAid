@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head>
+  <title>HealthAid</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+  <link rel="stylesheet" href="../style/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Muli:300,400,600,700,800" rel="stylesheet">
+</head>
+<body id="hero">
+  <div class="container tac">
+    <div class="row">
+      <div class="col s12">
+      <h1 class="whiteTxt">Admin</h1>
+      <table>
+        <thead>
+          <tr>
+              <th>Email</th>
+              <th>User ID</th>
+              <th>height</th>
+              <th>weight</th>
+              <th>bp</th>
+              <th>hr</th>
+              <th>pap</th>
+              <th>skin</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <% for(var i=0; i < users.length; i++) { %>
+            <tr>
+              <td><%= users[i].local.email %></td>
+              <td><%= users[i].id %></td>
+              <td><button class="waves-effect waves-light btn-small" id=<%= 'height-' + users[i].local.email %>>Height</button></td>
+              <td><button class="waves-effect waves-light btn-small" id=<%= 'weight-' + users[i].local.email %>>Weight</button></td>
+              <td><button class="waves-effect waves-light btn-small" id=<%= 'bp-' + users[i].local.email %>>BP</button></td>
+              <td><button class="waves-effect waves-light btn-small" id=<%= 'hr-' + users[i].local.email %>>HR</button></td>
+              <td><button class="waves-effect waves-light btn-small" id=<%= 'pap-' + users[i].local.email %>>PAP</button></td>
+              <td><button class="waves-effect waves-light btn-small" id=<%= 'skin-' + users[i].local.email %>>Skin</button></td>
+            </tr>
+          <% } %>
+        </tbody>
+      </table>
+    </div><!--col-->
+    </div><!--row-->
+</div><!--container-->
+</body>
+  <script type="text/javascript" src="js/admin.js"></script>
+</html>
+
+
+<!-- //source: https://scotch.io/tutorials/easy-node-authentication-setup-and-local -->
