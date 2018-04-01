@@ -117,7 +117,41 @@ module.exports = function(app, passport) {
       user : req.user
     });
   });
-
+  // HR ==============================
+  app.get('/hr', isLoggedIn, function(req, res) {
+    res.render('hr.ejs', {
+      user : req.user
+    });
+  });
+  app.get('/hr2', isLoggedIn, function(req, res) {
+    res.render('hr2.ejs', {
+      user : req.user
+    });
+  });
+  app.get('/hr3', isLoggedIn, function(req, res) {
+    res.render('hr3.ejs', {
+      user : req.user
+    });
+  });
+  app.get('/hr4', isLoggedIn, function(req, res) {
+    res.render('hr4.ejs', {
+      user : req.user
+    });
+  });
+  app.get('/hr5', isLoggedIn, function(req, res) {
+    res.render('hr5.ejs', {
+      user : req.user
+    });
+  });
+  app.get('/hr6', isLoggedIn, function(req, res) {
+    res.render('hr6.ejs', {
+      user : req.user
+    });
+  });    app.get('/hr7', isLoggedIn, function(req, res) {
+    res.render('hr7.ejs', {
+      user : req.user
+    });
+  });
   // =============================================================================
   // PHI =========================================================================
   // =============================================================================

@@ -161,6 +161,7 @@ fieldset {
       border-radius: 4px;
      -webkit-box-shadow: 0 0 9px rgba(0, 0, 0, 0.3);
      box-shadow: 0 0 9px rgba(0, 0, 0, 0.3);
+     min-height: 222px;
     }
     .headWell {
       text-align: center;
@@ -186,6 +187,9 @@ fieldset {
         }
 .skin{
   background-image: url("../imgs/skin.png");
+}
+.heart{
+  background-image: url("../imgs/heart.png");
 }
 .iconImg{
   min-height:300px;

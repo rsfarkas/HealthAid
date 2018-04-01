@@ -30,7 +30,7 @@
       <div class="row">
         <!-- HEIGHT INFORMATION -->
         <% if (user.phi.height.visible) { %>
-          <div class="col s4">
+          <div class="col s6 m4 l4">
             <div class="well">
               <h3></span> Height </h3>
               <p>
@@ -41,7 +41,7 @@
           <%  } %>
           <!-- WEIGHT INFORMATION -->
           <% if (user.phi.weight.visible) { %>
-            <div class="col s4">
+            <div class="col s6 m4 l4">
               <div class="well">
                 <h3>Weight</h3>
                 <p>
@@ -52,7 +52,7 @@
             <%  } %>
             <!-- BP INFORMATION -->
             <% if (user.phi.bp.visible) { %>
-              <div class="col s4">
+              <div class="col s6 m4 l4">
                 <div class="well">
                   <h3>BP</h3>
                   <p>
@@ -63,9 +63,9 @@
               <%  } %>
               <!-- HR INFORMATION -->
               <% if (user.phi.hr.visible) { %>
-                <div class="col s4">
+                <div class="col s6 m4 l4">
                   <div class="well">
-                    <h3>HR</h3>
+                    <h3><a href="hr">HR</a></h3>
                     <p>
                       <span class="editable" id="hr"> <%= user.phi.hr.content %></span><br>
                     </p>
@@ -74,7 +74,7 @@
                 <%  } %>
                 <!-- PAP INFORMATION -->
                 <% if (user.phi.pap.visible) { %>
-                  <div class="col s4">
+                  <div class="col s6 m4 l4">
                     <div class="well">
                       <h3>PAP</h3>
                       <p>
@@ -85,9 +85,9 @@
                   <%  } %>
                   <!-- SKIN INFORMATION -->
                   <% if (user.phi.skin.visible) { %>
-                    <div class="col s4">
+                    <div class="col s6 m4 l4">
                       <div class="well">
-                        <h3><a href="skin2">Skin</a></h3>
+                        <h3><a href="skin">Skin</a></h3>
                         <p>
                           <span class="editable" id="skin"> <%= user.phi.skin.content %> </span><br>
                         </p>
