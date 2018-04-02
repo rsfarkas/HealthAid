@@ -21,7 +21,7 @@ var heightMailer = {
       from: '"HealthAid" <roxysfarkas@gmail.com>', // sender address
       to: toField,
       subject: 'Height EMAIL',
-      html: {path: 'http://localhost:3000/heightEmail'},
+      html: {path: process.env.WEB_URL + 'heightEmail'},
     };
 
     transporter.sendMail(mailOptions, (error, info) => {
@@ -43,7 +43,7 @@ var weightMailer = {
       from: '"HealthAid" <roxysfarkas@gmail.com>',
       to: toField,
       subject: 'weight EMAIL',
-      html: {path: 'http://localhost:3000/weightEmail'},
+      html: {path: process.env.WEB_URL + 'weightEmail'},
     };
 
     transporter.sendMail(mailOptions, (error, info) => {
@@ -64,7 +64,7 @@ var bpMailer = {
       from: '"HealthAid" <roxysfarkas@gmail.com>',
       to: toField,
       subject: 'bp EMAIL',
-      html: {path: 'http://localhost:3000/bpEmail'},
+      html: {path: process.env.WEB_URL + 'bpEmail'},
     };
 
     transporter.sendMail(mailOptions, (error, info) => {
@@ -85,7 +85,7 @@ var hrMailer = {
       from: '"HealthAid" <roxysfarkas@gmail.com>',
       to: toField,
       subject: 'hr EMAIL',
-      html: {path: 'http://localhost:3000/hrEmail'},
+      html: {path: process.env.WEB_URL + 'hrEmail'},
     };
 
     transporter.sendMail(mailOptions, (error, info) => {
@@ -106,7 +106,7 @@ var papMailer = {
       from: '"HealthAid" <roxysfarkas@gmail.com>',
       to: toField,
       subject: 'pap EMAIL',
-      html: {path: 'http://localhost:3000/papEmail'},
+      html: {path: process.env.WEB_URL + 'papEmail'},
     };
 
     transporter.sendMail(mailOptions, (error, info) => {
@@ -127,7 +127,7 @@ var skinMailer = {
       from: '"HealthAid" <roxysfarkas@gmail.com>',
       to: toField,
       subject: 'skin EMAIL',
-      html: {path: 'http://localhost:3000/skinEmail'},
+      html: {path: process.env.WEB_URL + 'skinEmail'},
     };
 
     transporter.sendMail(mailOptions, (error, info) => {

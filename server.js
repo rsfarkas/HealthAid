@@ -2,9 +2,15 @@
 
 // set up ======================================================================
 // get all the tools we need
+//
+
+if (process.env.NODE_ENV !== 'production') {
+  require('dotenv').load();
+}
+
 var express  = require('express');
 var app      = express();
-var port     = process.env.PORT || 3000;
+var port     = process.envlPORT || 5000;
 var mongoose = require('mongoose');
 var passport = require('passport');
 var flash    = require('connect-flash');
