@@ -1,38 +1,47 @@
 <!doctype html>
 <html>
 <head>
-<title> HealthAid </title>
-<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
-<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
-<link rel="stylesheet" href="../style/style.css">
-<link href="https://fonts.googleapis.com/css?family=Muli:300,400,600,700,800" rel="stylesheet">
-<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
-<script type="text/javascript" src="js/eip.min.js"></script>
-<script type="text/javascript" src="js/editable.js"></script>
+  <title> HealthAid </title>
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+  <link rel="stylesheet" href="../style/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Muli:300,400,600,700,800" rel="stylesheet">
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+  <script type="text/javascript" src="js/eip.min.js"></script>
+  <script type="text/javascript" src="js/editable.js"></script>
 </head>
 <body>
   <div class="headWell tal heart">
-  <h1>Heart Rate (HR)</h1>
-  <h4>Last Recorded: X days ago</h4>
-</div>
-<div class="container">
-  <div class="col s8">
-    <div class="well tal">
-      <h5>Whats Going On</h5>
-      <p>The more fit you are, the lower your resting heart rate.  At peak condition your heart rate should be between 40bpm - 50bpm, or beats per minute. 60bpm - 80bpm is considered normal.</p>
-      <p>It’s important to get your heart rate checked yearly.</p>
-      <p>Changes in heart rate may signal a heart condition or other condition such a diabetes or and under or overactive thyroid. </p>
+    <div class="row">
+      <div class="col s5">
+        <h1>Heart Rate (HR)</h1>
+        <h4>Last Recorded: X days ago</h4>
+      </div>
+      <div class="col s7">
+        <img class="fr" src="../imgs/heart-beating.png">
+      </div>
     </div>
+  </div>
+  <div class="container">
+    <div class="col s8">
+      <div class="well tal">
+        <h5>Whats Going On</h5>
+        <hr>
+        <p>The more fit you are, the lower your resting heart rate.  At peak condition your heart rate should be between 40bpm - 50bpm, or beats per minute. 60bpm - 80bpm is considered normal.</p>
+        <p>It’s important to get your heart rate checked yearly.</p>
+        <p>Changes in heart rate may signal a heart condition or other condition such a diabetes or and under or overactive thyroid. </p>
+      </div>
       <div class="well tal">
         <h5>Self-Check</h5>
+        <hr>
         <p>Checking your HR is a great and easy way to measure health in real time, as it provides a measurement of heart muscle function.</p>
         <a class="lBut" href="hr2">Perform self check</a>
       </div>
-  </div>
+    </div>
   </div><!--container-->
 </body>
 </html>

@@ -1,46 +1,92 @@
+
+
+
 <!doctype html>
 <html>
 <head>
-    <title>HealthAid</title>
-    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
-    <style>
-        body         { padding-top:80px; }
-    </style>
+  <title>HealthAid | Signup</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+  <link rel="stylesheet" href="../style/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Muli:300,400,600,700,800" rel="stylesheet">
 </head>
-<body>
-<div class="container">
-<div class="col-sm-6 col-sm-offset-3">
+<header>
+  <nav>
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo">Logo</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="sass.html">Sass</a></li>
+        <li><a href="badges.html">Components</a></li>
+        <li><a href="collapsible.html">JavaScript</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+<main>
+  <div class="container">
+    <div class="col s10">
+      <p>Welcome back to HealthAid! We are so excited to help you manage your health on the&nbsp;go.</p>
+    </div>
+    <div class="row">
+    </div><!--row-->
+    <div class="row">
+      <div class="col s12">
+        <!--error message-->
+        <% if (message.length > 0) { %>
+          <div class="alert alert-danger"><%= message %></div>
+          <% } %>
+          <!-- LOGIN FORM -->
+          <form action="/login" method="post">
+              <div class="form-group">
+                  <label>Email</label>
+                  <input type="text" class="form-control" name="email">
+              </div>
+              <div class="form-group">
+                  <label>Password</label>
+                  <input type="password" class="form-control" name="password">
+              </div>
 
-    <h1><span class="fa fa-sign-in"></span> Login</h1>
-
-    <% if (message.length > 0) { %>
-        <div class="alert alert-danger"><%= message %></div>
-    <% } %>
-
-    <!-- LOGIN FORM -->
-    <form action="/login" method="post">
-        <div class="form-group">
-            <label>Email</label>
-            <input type="text" class="form-control" name="email">
+              <button type="submit" class="btn btn-warning btn-lg">Login</button>
+          </form>
+        </div><!--col-->
+      </div><!--row-->
+      <div class="row pt50">
+        <div class="sm8">
+          <p>Need an account? <a href="/signup">Signup</a></p>
+          <p>Or go <a href="/">home</a>.</p>
         </div>
-        <div class="form-group">
-            <label>Password</label>
-            <input type="password" class="form-control" name="password">
+      </div><!--row-->
+    </div><!--container-->
+    </main>
+    <footer class="page-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 class="white-text">Footer Content</h5>
+            <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+          </div>
+          <div class="col l4 offset-l2 s12">
+            <h5 class="white-text">Links</h5>
+            <ul>
+              <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+            </ul>
+          </div>
         </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container">
+          © 2014 Copyright Text
+          <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+  </html>
 
-        <button type="submit" class="btn btn-warning btn-lg">Login</button>
-    </form>
-
-    <hr>
-
-    <p>Need an account? <a href="/signup">Signup</a></p>
-    <p>Or go <a href="/">home</a>.</p>
-
-</div>
-</div>
-</body>
-</html>
+  <!-- //source: https://scotch.io/tutorials/easy-node-authentication-setup-and-local -->
 
 <!-- //source: https://scotch.io/tutorials/easy-node-authentication-setup-and-local -->
-
